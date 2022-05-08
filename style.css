@@ -1,27 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Press+Start+2P&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
 body {
+    background: url('bg.jpg') no-repeat;
+    background-size: 100%;
     background-color: #0095dd;
     display: flex;
     flex-direction: column;
     align-items: center;
    justify-content: center; 
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: 'Press Start 2P', cursive;
    min-height:100vh;
    margin: 0;
 }
 
 h1 {
-    font-size: 45px;
+    font-size: 30px;
     color: #fff;
-}
+    text-align: center;
+  }
 
 canvas {
-    background: #f0f0f0;
+    background: transparent;
     display: block;
     border-radius: 5px;
+    -webkit-box-shadow:0px 0px 143px 700px rgba(29,0,247,0.26);
+    -moz-box-shadow: 0px 0px 143px 700px rgba(29,0,247,0.26);
+    box-shadow: 0px 0px 143px 700px rgba(29,0,247,0.26);
 }
 
 .btn {
@@ -58,10 +66,10 @@ canvas {
     background: #333;
     color: #fff;
     min-height: 100vh;
-    width: 1500px;
+    width: 400px;
     padding:20px;
     line-height: 1.5;
-    transform: translateX(-1500px);
+    transform: translateX(-400px);
     transition: transform 1s ease-in-out;
 }
 
